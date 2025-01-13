@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: external-api-coll-ed99a6ed54234e27a02bed6c2a6a83eb-srv
+spec:
+  selector:
+    app: external-api-coll-ed99a6ed54234e27a02bed6c2a6a83eb
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 7070
+  type: ClusterIP
